@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Kullanımı</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/extra.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="menu">
+
+            <div class="card">
+
+                <div>
+                    <a href="#" class="btn bg-warning h3" data-bs-toggle="collapse" data-bs-target="#birinci">Birinci
+                        menü</a>
+                </div>
+                <div class="collapse show" id="birinci" data-bs-parent="#menu">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Tenetur aperiam
+                    illum sit dignissimos nulla sed voluptate doloribus. Delectus veritatis excepturi ut distinctio
+                    placeat
+                    quos accusantium.
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+                    <a href="#" class="btn bg-warning h3" data-bs-toggle="collapse" data-bs-target="#ikinci">İkinci
+                        menü</a>
+                </div>
+                <div class="collapse" id="ikinci" data-bs-parent="#menu">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Tenetur aperiam
+                    illum sit dignissimos nulla sed voluptate doloribus. Delectus veritatis excepturi ut distinctio
+                    placeat
+                    quos accusantium.
+                </div>
+
+
+            </div>
+
+            <div class="card">
+
+                <div>
+                    <a href="#" class="btn bg-warning h3" data-bs-toggle="collapse" data-bs-target="#ucuncu">Üçüncü
+                        menü</a>
+                </div>
+                <div class="collapse" id="ucuncu" data-bs-parent="#menu">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Tenetur aperiam
+                    illum sit dignissimos nulla sed voluptate doloribus. Delectus veritatis excepturi ut distinctio
+                    placeat
+                    quos accusantium.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
