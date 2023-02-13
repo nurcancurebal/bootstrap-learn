@@ -8,9 +8,71 @@
     <title>Carousel Kullanımı</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/extra.css" rel="stylesheet">
+    <style>
+        img {
+            width: 100%;
+            height: 800px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="container">
+
+        <div id="ozel-slide" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel"
+            data-bs-wrap="true">
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#ozel-slide" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#ozel-slide" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#ozel-slide" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="./img/cat.jpg" alt="">
+
+                    <div class="carousel-caption">
+                        <h4 class="h4">Güzel bakan kedi</h4>
+                        <span>ela gözlü kedi</span>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/cicek.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h4 class="h4">Doğa fotoğrafı</h4>
+                        <span>güzel bir çiçek</span>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/resim.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h4 class="h4">Süperman domuzcuk</h4>
+                        <span>uçan domuz</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#ozel-slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Geri</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#ozel-slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">İleri</span>
+            </button>
+
+        </div>
+
+
+    </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
 
